@@ -10,13 +10,21 @@ int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
 
-    char estado;
-    char codigodacarta;
-    char nomedacidade;
-    int populacao;
-    float area; 
-    float PIB;
-    int pontosturisticos;
+    char estado[5] = "Bahia";
+    char codigodacarta[3] = "B01";
+    char cidade[8] = "Salvador";
+    int populacao = 14000000;
+    float area = 567295; 
+    float PIB = 352618000;
+    int pontosturisticos = 13;
+    
+    char estado2[5] = "ceara";
+    char codigodacarta2[3] = 'C01';
+    char cidade2[9] = "Fortaleza";
+    int populacao2 = 8795000;
+    float area2 = 148886;
+    float PIB2 = 194885000;
+    int pontosturisticos2 = 15;
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -26,30 +34,29 @@ int main() {
     scanf("%s", &estado);
     printf("estado: %s\n", estado);
 
-    printf("digite o codigo da carta: ");
+    printf("digite o codigo: ");
     scanf("%s", &codigodacarta);
-    printf("codigo da carta: %s\n", codigodacarta);
+    printf("estado: %s\n", codigodacarta);
 
     printf("digite o nome da cidade: ");
-    scanf("%s", &nomedacidade);
-    printf("nome da cidade: %s\n", nomedacidade);
+    scanf("%s", &cidade);
+    printf("cidade: %s\n", cidade);
 
-    printf("digite a populacao: ");
+    printf("digite a populacao; ");
     scanf("%d", &populacao);
-    printf("populacao: %d\n", populacao);
+    printf("estado: %d\n", populacao);
 
     printf("digite a area: ");
     scanf("%f", &area);
-    printf("area: %f\n", area);
+    printf("area: %.3f\n", area);
 
     printf("digite o PIB: ");
     scanf("%f", &PIB);
-    printf("PIB: %f\n", PIB);
+    printd("PIB: %f\n", PIB);
 
     printf("digite o numero de pontos turisticos: ");
     scanf("%d", &pontosturisticos);
-    printf("pontos turisticos: %d", pontosturisticos);
-
+    printf("pontos turisticos: %d\n", pontosturisticos);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
