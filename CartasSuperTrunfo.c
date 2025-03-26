@@ -37,12 +37,6 @@ int main() {
     printf("digite o estado: ");
     scanf("%s", &estado1);
 
-    printf("digite a codigo da carta: ");
-    scanf("%s", &codigodacarta1);
-
-    printf("digite a cidade: ");
-    scanf("%s", &cidade1);
-
     printf("digite a populacao: ");
     scanf("%d", &populacao1);
 
